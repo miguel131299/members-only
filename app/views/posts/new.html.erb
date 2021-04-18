@@ -1,0 +1,10 @@
+<%= form_with model: @post, method: :post do |form| %>
+  <br><br>
+  <%= form.label :title, "Title:" %>
+  <%= form.text_field :title, :value => 'Your title here'%><br><br>
+
+  <%= form.label :email, "body:" %>
+  <%= form.text_field :body, :value => 'body...'%><br><br>
+
+  <%= form.submit "Submit" %>
+<% end %>
